@@ -2,6 +2,24 @@ package ejemplos.bucles;
 
 import java.util.Scanner;
 
+/*
+ * CODIGO INCORRECTO: cambio mayor por menor en el if y en el if else
+ * 
+ * 0 iteraciones -> bucle do while siempre hace al menos 1 iteracion, no se puede hacer
+ * 
+ * 1 iteracion -> valor respuesta=IGUAL resultado obtenido=¡¡ENHORABUENA!! Has acertado
+ * 
+ * maximo iteraciones -> tantas como usuario desee no comprobable
+ * 
+ * maximo-1 iteraciones -> tantas como usuario desee no comprobable
+ * 
+ * maximo+1 iteraciones -> tantas como usuario desee no comprobable
+ * 
+ * intermedio iteraciones -> valor respuesta=IGUAL valor respuesta=MENOR valor respuesta=MAYOR
+ * resultado obtenido= ¡¡ENHORABUENA!! Has acertado
+ * 
+ */
+
 public class Ejercicio5 {
 
 	public static void main(String[] args) {
@@ -16,9 +34,9 @@ public class Ejercicio5 {
 			respuesta = sc.nextLine();
 			
 			if(respuesta.equals("MAYOR")) {
-				mayor = numero;
-			} else if(respuesta.equals("MENOR")) {
 				menor = numero;
+			} else if(respuesta.equals("MENOR")) {
+				mayor = numero;
 			}
 			
 		}while(!respuesta.equals("IGUAL"));
